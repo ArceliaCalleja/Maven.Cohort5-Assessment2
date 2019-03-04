@@ -10,7 +10,10 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        return null;
+
+        return StringUtils.padLeft(stringToBePadded, amountOfPadding);
+
+
     }
 
     /**
@@ -18,8 +21,11 @@ public class StringUtils {
      * @param amountOfPadding - amount of padding to be flushed right
      * @return `stringToBePadded` flushed right by right-padding
      */
-    public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+    public static String padRight(String stringToBePadded, int amountOfPadding)
+    {
+       // int p = amountOfPadding;
+        //String s= String.format('%ps',stringToBePadded)
+       return null;
     }
 
     /**
@@ -28,7 +34,12 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+
+        StringBuilder builder = new StringBuilder();
+        for (int i = 0; i < numberOfTimeToRepeat; i++) {
+            builder.append(stringToBeRepeated);
+        }
+        return builder.toString();
     }
 
     /**
