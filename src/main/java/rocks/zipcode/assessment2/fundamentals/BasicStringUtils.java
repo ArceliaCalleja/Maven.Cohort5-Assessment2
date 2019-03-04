@@ -6,8 +6,9 @@ public class BasicStringUtils {
      * @param string2 - String to add to `string1`
      * @return concatenation of `string1` and `string2`
      */
-    public static String concatentate(String string1, String string2) {
-        return null;
+    public static String concatentate(String string1, String string2)
+    {
+        return string1 + string2;
     }
 
     /**
@@ -15,7 +16,11 @@ public class BasicStringUtils {
      * @return an identical string with characters in reverse order
      */
     public static String reverse(String string1) {
-        return null;
+
+        StringBuilder sb = new StringBuilder(string1);
+
+        return sb.reverse().toString();
+
     }
 
     /**
@@ -24,7 +29,12 @@ public class BasicStringUtils {
      * @return concatenation of the reverse of `string1` and reverse of `string2`
      */
     public static String reverseThenConcatenate(String string1, String string2) {
-        return null;
+
+        String s1 = reverse(string1);
+        String s2 = reverse(string2);
+
+
+        return s1 + s2;
     }
 
     /**
@@ -33,7 +43,10 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        return null;
+
+        String result = string.replaceAll(charactersToRemove, "");
+
+        return result;
     }
 
     /**
